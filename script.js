@@ -6,6 +6,7 @@ in 2 or more rows*/
 
 //String
 const greetings = "hi there";
+console.log('primitives');
 console.log(typeof greetings);
 
 //Number
@@ -29,4 +30,21 @@ console.log(someUndefinedValue);
 
 //objects
 const obj = {};
-(obj.name = "Alex"), (obj.age = 38), (obj.gender = "male"), console.log(obj.age);
+(obj.name = "Alex"); (obj.age = 38); (obj.gender = "male");
+
+//big int
+const bigInt = 99999999999999999999999n;
+console.log(typeof bigInt);
+
+//symbol
+const user = {
+    id: 10,
+    age: 38,
+    height: 177,
+};
+const id = Symbol('some new symbol');
+user[id] = 500;
+console.log(typeof id);
+
+
+console.log(typeof obj);
