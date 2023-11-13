@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-<div class="container">
-    <div class="image-container">
-        <img class="img" src="./img/pngwing.com.png" alt="smile" ><br>
-        <button id="button-happy">smile available</button><br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img class="img" src="./img/pngwing.com.png" alt="smile" /><br />
+        <button id="button-happy">smile available</button><br /><br />
         <button id="button-sad" disabled>smile gone</button>
+      </div>
     </div>
-</div>
 
-<script src="./dom.js"></script>
-</body>
+    <style>
+      html {
+        box-sizing: border-box;
+        background-color: dimgray;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .image-container {
+        text-align: center;
+      }
+      img {
+        display: none;
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    </style>
+
+    <script src="./dom.js"></script>
+  </body>
 </html>
