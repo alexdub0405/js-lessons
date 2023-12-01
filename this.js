@@ -21,7 +21,7 @@ obj.showThis();
 function Person(name) {
   this.name = name;
   this.sayHello = function () {
-    console.log("Hello", this.name);
+    console.log(`Hello, ${this.name}`);
   };
 }
 const person1 = new Person("Alex");
@@ -33,7 +33,7 @@ class Person2 {
     this.name = name;
   }
   showThis() {
-    console.log("Hello", this.name);
+    console.log(`Hello, ${this.name}`);
   }
 }
 const person2 = new Person2("Alex");
